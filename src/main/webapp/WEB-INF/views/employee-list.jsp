@@ -13,14 +13,18 @@
 		<tr>
 			<th>ID</th>
 			<th>Name</th>
+			<th>Department</th>
 			<th>Email</th>
+			<th>Salary</th>
 			<th>Actions</th>
 		</tr>
 		<c:forEach var="employee" items="${employees}">
 			<tr>
 				<td>${employee.id}</td>
 				<td>${employee.name}</td>
+				<td>${employee.department}</td>
 				<td>${employee.email}</td>
+				<td>${employee.salary}</td>
 				<td>
 					<a href="/employees/edit/${employee.id}">Edit</a> 
 					<a href="/employees/delete/${employee.id}">Delete</a>

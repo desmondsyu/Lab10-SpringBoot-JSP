@@ -17,10 +17,23 @@
 		</div>
 		
 		<div>
+			<form:label path="department">Department:</form:label>
+			<form:input path="department" />
+			<form:errors path="department" />
+		</div>
+		
+		<div>
 			<form:label path="email">Email:</form:label>
 			<form:input path="email" />
 			<form:errors path="email" />
 		</div>
+		
+		<div>
+			<form:label path="salary">Salary:</form:label>
+			<form:input path="salary" />
+			<form:errors path="salary" />
+		</div>
+		
 		<button type="submit">Submit</button>
 	</form:form>
 </body>

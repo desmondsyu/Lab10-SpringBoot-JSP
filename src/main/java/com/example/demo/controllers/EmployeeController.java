@@ -61,9 +61,9 @@ public class EmployeeController {
 		Employee existingEmployee = employeeList.stream().filter(emp -> emp.getId() == id).findFirst().orElse(null);
 		if (existingEmployee != null) {
 			existingEmployee.setName(employee.getName());
-//			existingEmployee.setDepartment(employee.getDepartment());
+			existingEmployee.setDepartment(employee.getDepartment());
 			existingEmployee.setEmail(employee.getEmail());
-//			existingEmployee.setSalary(employee.getSalary());
+			existingEmployee.setSalary(employee.getSalary());
 		}
 		return "redirect:/employees";
 	}
